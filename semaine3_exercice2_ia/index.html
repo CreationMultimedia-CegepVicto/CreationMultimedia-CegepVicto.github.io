@@ -1,0 +1,2316 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://CreationMultimedia-CegepVicto.github.io/semaine3_exercice2_ia/">
+      
+      
+        <link rel="prev" href="../semaine3_exercice1_conception/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>1 Cerveau, 1001 Echos - Creation Multimédia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#semaine-3-exercice-2-brainstorming-assiste-par-ia" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Creation Multimédia" class="md-header__button md-logo" aria-label="Creation Multimédia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Creation Multimédia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1 Cerveau, 1001 Echos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Creation Multimédia" class="md-nav__button md-logo" aria-label="Creation Multimédia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Creation Multimédia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes de cours
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes de cours
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Théorie de l'image fixe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Théorie de l'image fixe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc1_1_composition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Composition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc1_2_lumiere/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lumière et contraste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc1_3_couleur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Couleur et psychologie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc1_4_synthese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthèse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Théorie de l'image numérique
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Théorie de l'image numérique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc2_1_image_numerique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L'image numérique
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc2_2_canva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logiciel d'édition Canva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc2_3_typographie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La typographie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc2_4_synthese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthèse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Méthodologie et processus créatif
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Méthodologie et processus créatif
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc3_1_processus_conception/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processus créatif
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bloc3_2_ia_creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L'IA comme assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices pratiques
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exercices pratiques
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semaine 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semaine 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine2_exercice1_canva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Premiers pas avec Canva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine2_exercice2_typographie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explorer la typographie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine2_exercice3_affiches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 Photos, 1 Histoire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semaine 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semaine 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaine3_exercice1_conception/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Concept, 1001 Mots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Cerveau, 1001 Echos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Cerveau, 1001 Echos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectif
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duree-estimee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Durée estimée
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiel-requis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matériel requis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-configuration-et-premier-prompt-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 1 : Configuration et premier prompt (8 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Configuration et premier prompt (8 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-preparer-votre-contexte-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Préparer votre contexte (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-construire-votre-prompt-initial-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Construire votre prompt initial (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-analyse-et-selection-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 2 : Analyse et sélection (10 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 2 : Analyse et sélection (10 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-evaluer-les-propositions-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Évaluer les propositions (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-selectionner-vos-favoris-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Sélectionner vos favoris (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-demander-des-ameliorations-2-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 : Demander des améliorations (2 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-critique-constructive-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 3 : Critique constructive (7 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 3 : Critique constructive (7 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-creer-un-mini-concept-detaille-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Créer un mini-concept détaillé (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-demander-une-critique-professionnelle-4-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Demander une critique professionnelle (4 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-4-exploration-de-variantes-5-min-facultatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 4 : Exploration de variantes (5 min facultatif)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 4 : Exploration de variantes (5 min facultatif)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-le-temps-le-permet-declinaisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si le temps le permet : Déclinaisons
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-5-documentation-et-synthese-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 5 : Documentation et synthèse (5 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 5 : Documentation et synthèse (5 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-compiler-vos-resultats-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Compiler vos résultats (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-capturer-les-meilleures-idees-2-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Capturer les meilleures idées (2 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-évaluation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto-évaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#competences-developpees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compétences développées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexion-sur-lutilisation-de-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Réflexion sur l'utilisation de l'IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prochaines-etapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prochaines étapes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prochaines étapes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-du-logo-dans-canva-formatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Création du logo dans Canva (formatif)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-optionnel-entre-les-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail optionnel entre les cours
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conseils-pour-maximiser-lutilisation-de-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conseils pour maximiser l'utilisation de l'IA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conseils pour maximiser l&#39;utilisation de l&#39;IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-lia-fait-bien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que l'IA fait bien
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-vous-faites-mieux-que-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que VOUS faites mieux que l'IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-formule-gagnante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La formule gagnante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemes-courants-et-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problèmes courants et solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflexion-finale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Réflexion finale
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectif
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duree-estimee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Durée estimée
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiel-requis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matériel requis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-configuration-et-premier-prompt-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 1 : Configuration et premier prompt (8 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Configuration et premier prompt (8 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-preparer-votre-contexte-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Préparer votre contexte (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-construire-votre-prompt-initial-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Construire votre prompt initial (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-analyse-et-selection-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 2 : Analyse et sélection (10 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 2 : Analyse et sélection (10 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-evaluer-les-propositions-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Évaluer les propositions (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-selectionner-vos-favoris-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Sélectionner vos favoris (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-demander-des-ameliorations-2-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 : Demander des améliorations (2 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-critique-constructive-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 3 : Critique constructive (7 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 3 : Critique constructive (7 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-creer-un-mini-concept-detaille-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Créer un mini-concept détaillé (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-demander-une-critique-professionnelle-4-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Demander une critique professionnelle (4 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-4-exploration-de-variantes-5-min-facultatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 4 : Exploration de variantes (5 min facultatif)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 4 : Exploration de variantes (5 min facultatif)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-le-temps-le-permet-declinaisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si le temps le permet : Déclinaisons
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-5-documentation-et-synthese-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 5 : Documentation et synthèse (5 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 5 : Documentation et synthèse (5 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-compiler-vos-resultats-3-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 : Compiler vos résultats (3 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-capturer-les-meilleures-idees-2-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 : Capturer les meilleures idées (2 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-évaluation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto-évaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#competences-developpees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compétences développées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexion-sur-lutilisation-de-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Réflexion sur l'utilisation de l'IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prochaines-etapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prochaines étapes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prochaines étapes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-du-logo-dans-canva-formatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Création du logo dans Canva (formatif)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-optionnel-entre-les-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail optionnel entre les cours
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conseils-pour-maximiser-lutilisation-de-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conseils pour maximiser l'utilisation de l'IA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conseils pour maximiser l&#39;utilisation de l&#39;IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-lia-fait-bien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que l'IA fait bien
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-vous-faites-mieux-que-lia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que VOUS faites mieux que l'IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-formule-gagnante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La formule gagnante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemes-courants-et-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problèmes courants et solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflexion-finale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Réflexion finale
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="semaine-3-exercice-2-brainstorming-assiste-par-ia">Semaine 3 - Exercice 2 : Brainstorming assisté par IA</h1>
+<h2 id="objectif">Objectif</h2>
+<p>Utiliser l'intelligence artificielle conversationnelle pour explorer, développer et affiner des concepts de logo en appliquant les techniques de prompting efficace.</p>
+<h2 id="duree-estimee">Durée estimée</h2>
+<p>30-35 minutes</p>
+<hr />
+<h2 id="contexte">Contexte</h2>
+<p>Vous avez complété votre planification (Exercice 1) et défini l'identité de votre revue. Maintenant, vous allez utiliser l'IA comme partenaire de brainstorming pour générer et affiner des concepts de logo avant de les créer manuellement.</p>
+<p><strong>Important</strong> : L'IA ne créera PAS votre logo à votre place. Elle vous aidera à explorer des idées, à les critiquer et à les affiner. Vous créerez votre logo final dans Canva.</p>
+<hr />
+<h2 id="materiel-requis">Matériel requis</h2>
+<p><strong>Accès à un outil d'IA conversationnelle (choisissez-en UN) :</strong>
+- ChatGPT (https://chat.openai.com/) - recommandé
+- Claude (https://claude.ai/)
+- Gemini (https://gemini.google.com/)
+- Copilot (https://copilot.microsoft.com/)</p>
+<p><strong>Documents de référence :</strong>
+- Vos notes de l'Exercice 1 (planification)
+- Votre déclaration d'intention du logo
+- Bloc 3.2 sous les yeux pour consulter les exemples de prompts</p>
+<hr />
+<h2 id="partie-1-configuration-et-premier-prompt-8-min">Partie 1 : Configuration et premier prompt (8 min)</h2>
+<h3 id="etape-1-preparer-votre-contexte-3-min">Étape 1 : Préparer votre contexte (3 min)</h3>
+<p><strong>Avant d'écrire votre prompt, rassemblez ces informations de l'Exercice 1 :</strong></p>
+<p><strong>Informations essentielles à inclure :</strong></p>
+<ol>
+<li>Nom de votre revue </li>
+<li>Types de contenus publiés </li>
+<li>Public cible </li>
+<li>3 adjectifs de personnalité </li>
+<li>Émotions à évoquer </li>
+<li>Palette de couleurs envisagée </li>
+<li>Style visuel préféré </li>
+</ol>
+<h3 id="etape-2-construire-votre-prompt-initial-5-min">Étape 2 : Construire votre prompt initial (5 min)</h3>
+<p><strong>Utilisez ce modèle et remplissez les blancs avec vos informations :</strong></p>
+<pre><code>Tu es un designer graphique spécialisé en identité de marque 
+pour publications littéraires étudiantes.
+
+CONTEXTE :
+Je travaille sur le logo d'une revue littéraire étudiante 
+nommée &quot;[NOM DE VOTRE REVUE]&quot;. Cette revue publie 
+[types de contenus] et s'adresse principalement à 
+[public cible]. 
+
+IDENTITÉ RECHERCHÉE :
+Notre revue se veut [adjectif 1], [adjectif 2] et [adjectif 3]. 
+Nous voulons évoquer [émotions principales] chez nos lecteurs.
+
+PRÉFÉRENCES VISUELLES :
+- Style : [style visuel choisi]
+- Palette : [couleurs envisagées]
+- À éviter : les clichés comme [exemples : livre ouvert, 
+  plume, etc.]
+
+TÂCHE :
+Propose 5 concepts de logo complètement différents, chacun 
+explorant une métaphore ou un symbolisme distinct. 
+
+Pour chaque concept, détaille :
+1. La métaphore visuelle ou le symbolisme utilisé
+2. Le style graphique précis (minimaliste, géométrique, 
+   illustratif, typographique, etc.)
+3. La palette de couleurs suggérée et pourquoi elle fonctionne
+4. Le type de logo (logotype, logo-symbole, monogramme, 
+   emblème)
+5. Pourquoi ce concept correspond à notre identité
+6. Un défi potentiel de ce concept
+</code></pre>
+<p><strong>Copiez ce prompt et complétez-le, collez-le dans votre IA choisie, et lancez la conversation.</strong></p>
+<hr />
+<h2 id="partie-2-analyse-et-selection-10-min">Partie 2 : Analyse et sélection (10 min)</h2>
+<h3 id="etape-1-evaluer-les-propositions-5-min">Étape 1 : Évaluer les propositions (5 min)</h3>
+<p><strong>L'IA vous a donné 5 concepts. Pour chacun, notez rapidement :</strong></p>
+<p><strong>Pour chaque concept de 1 à 5 :</strong></p>
+<ul>
+<li>Ce qui fonctionne </li>
+<li>Ce qui ne fonctionne pas </li>
+<li>Note intuitive /10 </li>
+</ul>
+<p><strong>Vérification importante :</strong></p>
+<ul>
+<li>[ ] Au moins un concept m'inspire vraiment</li>
+<li>[ ] Les concepts sont variés (pas 5 variations de la même idée)</li>
+<li>[ ] Je comprends la logique derrière chaque proposition</li>
+<li>[ ] Aucun concept n'utilise de clichés que je voulais éviter</li>
+</ul>
+<p><strong>Si vous n'êtes pas satisfait des propositions, demandez :</strong></p>
+<pre><code>&quot;Ces concepts sont intéressants mais [problème identifié : 
+trop similaires/trop complexes/trop clichés]. Propose 3 
+concepts complètement différents qui explorent [direction 
+que vous souhaitez].&quot;
+</code></pre>
+<h3 id="etape-2-selectionner-vos-favoris-3-min">Étape 2 : Sélectionner vos favoris (3 min)</h3>
+<p><strong>Choisissez vos 2 concepts préférés :</strong></p>
+<p><strong>Concept favori #1 :</strong> Concept <strong><em>_</em> (notez le numéro)
+<strong>Pourquoi :</strong> </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+<p><strong>Concept favori #2 :</strong> Concept <strong><em>_</em> (notez le numéro)
+<strong>Pourquoi :</strong> </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+<h3 id="etape-3-demander-des-ameliorations-2-min">Étape 3 : Demander des améliorations (2 min)</h3>
+<p><strong>Prompt de suivi pour affiner vos favoris :</strong></p>
+<pre><code>J'aime beaucoup les concepts [numéro] et [numéro]. 
+
+Pour le concept [numéro] : [ce qui vous plaît] mais 
+[ce que vous voudriez améliorer].
+
+Pour le concept [numéro] : [ce qui vous plaît] mais 
+[ce que vous voudriez améliorer].
+
+Peux-tu :
+1. Proposer 2 variantes améliorées du concept [numéro favori] 
+   qui résolvent [problème identifié]
+2. Explorer une fusion des meilleures caractéristiques des 
+   deux concepts
+</code></pre>
+<p><strong>Lancez ce prompt et analysez les réponses.</strong></p>
+<hr />
+<h2 id="partie-3-critique-constructive-7-min">Partie 3 : Critique constructive (7 min)</h2>
+<h3 id="etape-1-creer-un-mini-concept-detaille-3-min">Étape 1 : Créer un mini-concept détaillé (3 min)</h3>
+<p><strong>Basé sur vos échanges, décrivez votre concept de logo idéal en détail :</strong></p>
+<p><strong>Nom de la revue :</strong> <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></p>
+<p><strong>Description visuelle :</strong></p>
+<hr />
+<hr />
+<hr />
+<p><strong>Palette de couleurs exacte :</strong>
+- Couleur principale : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>
+- Couleur secondaire (si applicable) : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></p>
+<p><strong>Style :</strong> Minimaliste / Géométrique / Illustratif / Typographique / Autre : ______</p>
+<p><strong>Type de logo :</strong> Logotype / Logo-symbole / Monogramme / Emblème</p>
+<h3 id="etape-2-demander-une-critique-professionnelle-4-min">Étape 2 : Demander une critique professionnelle (4 min)</h3>
+<p><strong>Prompt de critique :</strong></p>
+<pre><code>Voici le concept de logo que nous avons développé :
+
+NOM : [nom de la revue]
+DESCRIPTION : [votre description détaillée ci-dessus]
+STYLE : [style choisi]
+COULEURS : [palette]
+TYPE : [type de logo]
+PUBLIC CIBLE : [rappel du public]
+
+En tant que designer senior, critique ce concept selon :
+1. SIMPLICITÉ : Est-il assez simple pour être mémorable et 
+   fonctionner en petit format? (note /10 et commentaire)
+2. ORIGINALITÉ : Se démarque-t-il des autres revues 
+   littéraires? (note /10 et commentaire)
+3. ADÉQUATION : Correspond-il bien au public cible et à 
+   l'identité? (note /10 et commentaire)
+4. POLYVALENCE : Fonctionnera-t-il en noir et blanc? Sur 
+   différents supports? (note /10 et commentaire)
+5. INTEMPORALITÉ : Restera-t-il pertinent dans 5 ans? 
+   (note /10 et commentaire)
+
+Sois honnête et constructif. Si la note totale est sous 40/50, 
+propose des améliorations concrètes.
+</code></pre>
+<p><strong>Lancez ce prompt et lisez attentivement la critique.</strong></p>
+<p><strong>Notez les points clés de la critique :</strong></p>
+<p><strong>Forces identifiées</strong></p>
+<p><strong>Faiblesses identifiées</strong></p>
+<p><strong>Améliorations suggérées</strong></p>
+<p><strong>Note globale reçue : ______/50</strong></p>
+<hr />
+<h2 id="partie-4-exploration-de-variantes-5-min-facultatif">Partie 4 : Exploration de variantes (5 min facultatif)</h2>
+<h3 id="si-le-temps-le-permet-declinaisons">Si le temps le permet : Déclinaisons</h3>
+<p><strong>Prompt pour générer des variantes :</strong></p>
+<pre><code>Notre concept final est : [description]
+
+Génère 3 variantes qui conservent l'essence mais explorent :
+
+VARIANTE A - MINIMALISTE :
+Réduis au strict minimum. Quelle est la version la plus 
+épurée possible?
+
+VARIANTE B - DYNAMIQUE :
+Ajoute du mouvement ou de l'énergie visuelle. Comment rendre 
+ce concept plus vivant?
+
+VARIANTE C - ÉLÉGANTE :
+Raffine et sophistique. Comment le rendre plus haut de gamme?
+
+Pour chaque variante, explique les modifications et l'impact 
+sur la perception.
+</code></pre>
+<p><strong>Quelle variante vous attire le plus?</strong></p>
+<p>Variante : <strong><em>_</em> parce que : </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+<hr />
+<h2 id="partie-5-documentation-et-synthese-5-min">Partie 5 : Documentation et synthèse (5 min)</h2>
+<h3 id="etape-1-compiler-vos-resultats-3-min">Étape 1 : Compiler vos résultats (3 min)</h3>
+<p><strong>Créez un document de synthèse avec :</strong></p>
+<p><strong>CONCEPT FINAL RETENU :</strong></p>
+<p>Nom du logo : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></p>
+<p>Description complète (pour guider la création dans Canva) :</p>
+<hr />
+<hr />
+<hr />
+<hr />
+<p>Éléments visuels clés :</p>
+<ul>
+<li>Forme principale : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></li>
+<li>Typographie : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></li>
+<li>Couleurs : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></li>
+<li>Symboles/métaphores : <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></li>
+</ul>
+<p><strong>JUSTIFICATION :</strong></p>
+<p>Pourquoi ce concept répond à notre identité :</p>
+<hr />
+<hr />
+<p>Comment il s'adresse à notre public :</p>
+<hr />
+<hr />
+<p><strong>NOTES TECHNIQUES POUR LA CRÉATION :</strong></p>
+<p>Points d'attention pour Canva :</p>
+<ul>
+<li>
+<hr />
+</li>
+<li>
+<hr />
+</li>
+<li>
+<hr />
+</li>
+</ul>
+<p>Ce que je dois éviter :</p>
+<ul>
+<li>
+<hr />
+</li>
+<li>
+<hr />
+</li>
+</ul>
+<h3 id="etape-2-capturer-les-meilleures-idees-2-min">Étape 2 : Capturer les meilleures idées (2 min)</h3>
+<p><strong>Sauvegardez votre conversation :</strong></p>
+<ul>
+<li>[ ] J'ai copié-collé les meilleures propositions dans un document</li>
+<li>[ ] J'ai noté les insights les plus utiles de l'IA</li>
+<li>[ ] J'ai ma description finale de concept claire et détaillée</li>
+<li>[ ] Je comprends pourquoi ce concept fonctionne</li>
+</ul>
+<p><strong>Si votre outil d'IA le permet, exportez ou sauvegardez la conversation complète pour référence future.</strong></p>
+<hr />
+<h2 id="auto-evaluation">Auto-évaluation</h2>
+<h3 id="competences-developpees">Compétences développées</h3>
+<p><strong>Après cet exercice, je suis capable de :</strong></p>
+<ul>
+<li>[ ] Structurer un prompt efficace avec contexte, tâche et contraintes</li>
+<li>[ ] Engager un dialogue itératif avec une IA pour affiner des idées</li>
+<li>[ ] Évaluer de manière critique les propositions de l'IA</li>
+<li>[ ] Utiliser l'IA pour obtenir une critique constructive de mes concepts</li>
+<li>[ ] Distinguer entre une bonne idée générale et un concept exploitable</li>
+<li>[ ] Documenter un concept de design de manière claire et complète</li>
+</ul>
+<h3 id="reflexion-sur-lutilisation-de-lia">Réflexion sur l'utilisation de l'IA</h3>
+<p><strong>Notez vos observations :</strong></p>
+<p><strong>1. Qu'est-ce que l'IA vous a apporté que vous n'auriez pas trouvé seul?</strong></p>
+<hr />
+<hr />
+<p><strong>2. Y a-t-il eu des suggestions que vous avez rejetées? Pourquoi?</strong></p>
+<hr />
+<hr />
+<p><strong>3. Avez-vous dû reformuler ou préciser vos prompts? Qu'avez-vous appris?</strong></p>
+<hr />
+<hr />
+<p><strong>4. Le concept final est-il exactement une proposition de l'IA ou une fusion/adaptation?</strong></p>
+<hr />
+<hr />
+<p><strong>5. Vous sentez-vous prêt à créer ce logo dans Canva? Qu'est-ce qui manque encore?</strong></p>
+<hr />
+<hr />
+<hr />
+<h2 id="prochaines-etapes">Prochaines étapes</h2>
+<h3 id="creation-du-logo-dans-canva-formatif">Création du logo dans Canva (formatif)</h3>
+<p><strong>Vous allez :</strong>
+1. Créer 2-3 versions du concept développé aujourd'hui dans Canva
+2. Tester ces versions en noir et blanc et en petit format
+3. Affiner en fonction des tests
+4. Sélectionner votre logo final</p>
+<p><strong>Documents à conserver :</strong>
+- [ ] Vos notes complètes de cet exercice
+- [ ] Vos notes de l'exercice précédent
+- [ ] Notes de tout ce qui vous a inspiré dans la conversation avec l'IA</p>
+<h3 id="travail-optionnel-entre-les-cours">Travail optionnel entre les cours</h3>
+<p><strong>Si vous voulez aller plus loin :</strong></p>
+<p><strong>Option 1 : Prototypage visuel (si accès à IA d'image)</strong></p>
+<p>Transformez votre description de concept en prompt de génération d'image :</p>
+<p><strong>Template de prompt image :</strong></p>
+<pre><code>&quot;[Style] logo design for literary magazine, [description 
+des éléments visuels], [palette de couleurs], [ambiance], 
+vector style, simple and memorable, white background&quot;
+</code></pre>
+<p>Exemple :</p>
+<pre><code>&quot;Minimalist logo design for literary magazine, abstract 
+geometric ink drop forming letter E, navy blue and coral 
+orange, modern and creative, vector style, simple and 
+memorable, white background&quot;
+</code></pre>
+<p>Générez 2-3 variations visuelles pour vous inspirer (Microsoft Copilot ou Adobe Firefly gratuits).</p>
+<p><strong>IMPORTANT : Ces images sont pour inspiration seulement. Vous créerez votre logo final manuellement dans Canva.</strong></p>
+<p><strong>Option 2 : Recherche visuelle complémentaire</strong></p>
+<ul>
+<li>Cherchez des logos de revues littéraires existantes</li>
+<li>Identifiez ce qui fonctionne dans votre concept préféré</li>
+<li>Créez un mood board (Pinterest ou document) avec 5-10 références</li>
+<li>Notez ce que vous voulez adapter vs éviter</li>
+</ul>
+<p><strong>Option 3 : Croquis exploratoires</strong></p>
+<ul>
+<li>Dessinez 5-10 croquis rapides basés sur votre concept</li>
+<li>Ne cherchez pas la perfection, explorez des variations</li>
+<li>Identifiez quelle version semble la plus prometteuse</li>
+<li>Ces croquis guideront votre création dans Canva</li>
+</ul>
+<hr />
+<h2 id="conseils-pour-maximiser-lutilisation-de-lia">Conseils pour maximiser l'utilisation de l'IA</h2>
+<h3 id="ce-que-lia-fait-bien">Ce que l'IA fait bien</h3>
+<p>✅ Générer de multiples idées rapidement
+✅ Offrir des perspectives différentes
+✅ Analyser et critiquer objectivement
+✅ Suggérer des variantes et alternatives
+✅ Expliquer les principes de design</p>
+<h3 id="ce-que-vous-faites-mieux-que-lia">Ce que VOUS faites mieux que l'IA</h3>
+<p>✅ Comprendre le contexte culturel subtil
+✅ Ressentir ce qui "sonne juste" visuellement
+✅ Connaître votre public cible personnellement
+✅ Exercer le jugement esthétique final
+✅ Créer avec précision dans Canva</p>
+<h3 id="la-formule-gagnante">La formule gagnante</h3>
+<p><strong>Votre créativité + Brainstorming IA + Votre exécution = Logo mémorable</strong></p>
+<hr />
+<h2 id="problemes-courants-et-solutions">Problèmes courants et solutions</h2>
+<p><strong>"L'IA génère des idées trop génériques"</strong></p>
+<p>→ Ajoutez plus de contraintes spécifiques dans vos prompts. Mentionnez explicitement ce que vous voulez ÉVITER.</p>
+<p><strong>"Les propositions ne correspondent pas à notre identité"</strong></p>
+<p>→ Relisez votre prompt initial. Avez-vous bien inclus les 3 adjectifs de personnalité? Les émotions à évoquer? Soyez plus précis.</p>
+<p><strong>"Je ne sais pas laquelle des 5 propositions choisir"</strong></p>
+<p>→ Demandez à l'IA : "Compare les concepts 2, 3 et 4. Lequel correspond le mieux à [votre critère principal]?"</p>
+<p><strong>"L'IA me suggère des éléments impossibles à créer dans Canva"</strong></p>
+<p>→ Précisez : "Propose des concepts réalisables avec des formes géométriques simples et de la typographie dans Canva, sans illustrations complexes."</p>
+<p><strong>"Je ne visualise pas bien les descriptions textuelles"</strong></p>
+<p>→ Demandez à l'IA : "Pour le concept 3, peux-tu décrire plus précisément : quelle forme exacte? Quelle police de style? Disposition verticale ou horizontale?"</p>
+<p><strong>"J'ai trop d'idées maintenant et je suis perdu"</strong></p>
+<p>→ Retournez à votre déclaration d'intention (Exercice 1). Laquelle des idées générées correspond le MIEUX à cette intention? Commencez par celle-là.</p>
+<hr />
+<p><strong>Exemples de conversations de brainstorming créatif :</strong></p>
+<p>Recherchez "AI logo brainstorming" sur YouTube pour voir le processus en action.</p>
+<p><strong>Communautés pour partager et apprendre :</strong></p>
+<ul>
+<li>r/PromptDesign sur Reddit</li>
+<li>Discord des outils d'IA (ChatGPT, Midjourney, etc.)</li>
+<li>Forums Canva pour voir comment d'autres combinent IA et création manuelle</li>
+</ul>
+<hr />
+<h2 id="reflexion-finale">Réflexion finale</h2>
+<p><strong>L'IA est un outil de réflexion, pas de remplacement</strong></p>
+<p>Cette session de brainstorming avec l'IA devrait vous avoir aidé à :
+- Explorer des territoires créatifs inattendus
+- Challenger vos premières idées
+- Affiner et préciser votre concept
+- Obtenir un regard critique externe</p>
+<p><strong>Mais le logo final sera 100% votre création</strong>, guidée par ces explorations.</p>
+<p>La différence entre un étudiant qui utilise bien l'IA et un qui l'utilise mal :</p>
+<p>❌ Mauvaise utilisation : "L'IA m'a dit de faire ça, alors je le fais"
+✅ Bonne utilisation : "L'IA m'a aidé à explorer, j'ai décidé, et je crée"</p>
+<p><strong>Vous restez le designer. L'IA est votre assistant de brainstorming.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
